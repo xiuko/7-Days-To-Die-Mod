@@ -1093,13 +1093,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="drugAntibiotics" count="6" craft_area="campfire" craft_tool="toolBeaker" tags="learnable">
-	<ingredient name="foodShamSandwich" count="4"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="3"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
 <recipe name="drugAntibiotics" count="12" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
-	<ingredient name="foodShamSandwich" count="1"/>
+	<ingredient name="foodRottingFlesh" count="1"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="1"/>
 	<ingredient name="drinkJarRiverWater" count="1"/>
 </recipe>
@@ -1189,9 +1189,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="farmPlotBlockVariantHelper" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
 	<ingredient name="resourceWood" count="4"/>
-	<ingredient name="foodRottingFlesh" count="10"/>
-	<ingredient name="resourcePotassiumNitratePowder" count="25"/>
-	<ingredient name="resourceClayLump" count="100"/>
+	<ingredient name="resourceClayLump" count="5"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
 	</effect_group>
@@ -1387,6 +1385,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedIron" count="20"/>
 	<ingredient name="resourceSpring" count="6"/>
 	<ingredient name="resourceMechanicalParts" count="12"/>
+</recipe>
+
+<recipe name="resourceSpring" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceScrapIron" count="2"/>
 </recipe>
 
 <recipe name="garageDoorMetal_v1Powered" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
@@ -1844,7 +1846,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="medicalAloeCream" count="1">
-	<ingredient name="resourceCropAloeLeaf" count="4"/>
+	<ingredient name="resourceCropAloeLeaf" count="1"/>
 </recipe>
 
 <recipe name="medicalBandage" count="1" >
@@ -2126,6 +2128,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="meleeToolTorch" count="1">
 	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="resourceCloth" count="1"/>
+	<ingredient name="resourceWood" count="1"/>
+</recipe>
+
+<recipe name="meleeToolTorch" count="1">
+	<ingredient name="ammoGasCan" count="1"/>
 	<ingredient name="resourceCloth" count="1"/>
 	<ingredient name="resourceWood" count="1"/>
 </recipe>
