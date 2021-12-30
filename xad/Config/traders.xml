@@ -1,0 +1,36 @@
+<!-- Xpath code for traders.xml for AlwaysOpenTraders -->
+
+<configs>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='1']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='1']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='2']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='2']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='3']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='3']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='4']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='4']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='5']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='5']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='6']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='6']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='7']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='7']/@close_time">06:59</set>
+	<!-- The time the trader officially opens -->
+		<set xpath="/traders/trader_info[@id='8']/@open_time">07:01</set>
+	<!-- The time the trader officially closes -->
+		<set xpath="/traders/trader_info[@id='8']/@close_time">06:59</set>
+</configs>
