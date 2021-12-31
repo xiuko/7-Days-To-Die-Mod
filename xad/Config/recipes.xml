@@ -335,6 +335,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceFeather" count="10"/>
 </recipe>
 
+<recipe name="resourceFeather" count="50">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourceGlue" count="1"/>
+</recipe>
+
 <recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
 	<ingredient name="resourceRockSmall" count="100"/>
 	<ingredient name="resourceWood" count="50"/>
@@ -3538,25 +3544,15 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="vehicleBicycleChassis" count="1" craft_time="30" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
-	<ingredient name="resourceForgedIron" count="5"/>
 	<ingredient name="resourceMechanicalParts" count="2"/>
-	<ingredient name="resourceDuctTape" count="2"/>
 	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceSpring"/>
-	</effect_group>
+	<ingredient name="resourceMetalPipe" count="6"/>
 </recipe>
 
 <recipe name="vehicleBicycleHandlebars" count="1" craft_time="30" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceLeather" count="1"/>
 	<ingredient name="resourceMechanicalParts" count="1"/>
-	<ingredient name="resourceMetalPipe" count="6"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceDuctTape,resourceLeather,resourceSpring,resourceMetalPipe"/>
-	</effect_group>
+	<ingredient name="resourceMetalPipe" count="5"/>
 </recipe>
 
 <recipe name="vehicleBicyclePlaceable" count="1" craft_time="30" tags="workbenchCrafting">
@@ -3596,32 +3592,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="carBattery" count="1"/>
 </recipe>
 
-<recipe name="vehicleMinibikeChassis" count="1" craft_time="90" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
-	<ingredient name="resourceForgedIron" count="10"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceDuctTape" count="4"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceElectricParts" count="1"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1" value=".5,.5" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceLeather"/>
-	</effect_group>
-</recipe>
-
-<recipe name="vehicleMinibikeHandlebars" count="1" craft_time="90" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceSpring" count="2"/>
+<recipe name="vehicleMinibikePlaceable" count="1" craft_time="90" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="vehicleBicyclePlaceable" count="1"/>
 	<ingredient name="resourceHeadlight" count="1"/>
 	<ingredient name="resourceElectricParts" count="2"/>
-	<ingredient name="resourceMetalPipe" count="6"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1" value=".5,.5" tags="resourceMechanicalParts,resourceSpring,resourceElectricParts,resourceMetalPipe"/>
-	</effect_group>
-</recipe>
-
-<recipe name="vehicleMinibikePlaceable" count="1" craft_time="90" craft_area="workbench" tags="workbenchCrafting">
-	<ingredient name="vehicleWheels" count="2"/>
-	<ingredient name="vehicleMinibikeChassis" count="1"/>
-	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
 	<ingredient name="smallEngine" count="1"/>
 	<ingredient name="carBattery" count="1"/>
 </recipe>
@@ -3657,14 +3631,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="vehicleWheels" count="1" tags="perkGreaseMonkey,learnable">
-	<ingredient name="resourceForgedIron" count="2"/>
-	<ingredient name="resourceScrapPolymers" count="16"/>
-	<ingredient name="resourceOil" count="2"/>
-	<ingredient name="resourceCoal" count="10"/>
-	<ingredient name="resourceAcid" count="1"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceScrapPolymers,resourceForgedIron,resourceCoal"/>
-	</effect_group>
+	<ingredient name="resourceForgedIron" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="8"/>
+	<ingredient name="resourceOil" count="1"/>
 </recipe>
 
 <recipe name="window03Wood" count="1">
