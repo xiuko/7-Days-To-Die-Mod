@@ -1005,9 +1005,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="toolBeaker" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
 	<ingredient name="unit_glass" count="10"/>
 	<ingredient name="unit_clay" count="1"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_glass"/>
-	</effect_group>
 </recipe>
 
 <recipe name="drinkCanEmpty" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
@@ -1859,6 +1856,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCloth" count="1"/>
 </recipe>
 
+<recipe name="resourceSewingKit" count="1" >
+	<ingredient name="resourceScrapIron" count="1"/>
+	<ingredient name="resourceCropCottonPlant" count="5"/>
+</recipe>
+
 <recipe name="medicalFirstAidBandage" count="1" tags="learnable">
 	<ingredient name="medicalAloeCream" count="1"/>
 	<ingredient name="resourceCloth" count="1"/>
@@ -1940,6 +1942,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_lead" count="2"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="resourceElectricParts" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_brass" count="2"/>
+	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
 <recipe name="meleeToolAxeT1IronFireaxe" count="1" tags="learnable,perkMiner69r">
