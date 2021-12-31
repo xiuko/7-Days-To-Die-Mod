@@ -1,0 +1,9 @@
+<configs>
+
+<set xpath="/blocks/block[@name='terrFertileGrass']/property[@name='PlantGrowing.GrowthRate']/@value"> 40.0 </set>
+<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value"> 40.0 </set>
+<set xpath="/blocks/block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value"> 40.0 </set>
+<set xpath="/blocks/block[@name='treePlantedMaple17m']/property[@name='PlantGrowing.GrowthRate']/@value"> 40.0 </set>
+<set xpath="/blocks/block[@name='plantedtreeGrassSeed1']/property[@name='PlantGrowing.GrowthRate']/@value"> 40.0 </set>
+
+</configs>
